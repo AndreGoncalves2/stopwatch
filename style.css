@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #121214;
+    --button-color: #42D3FF;
+
+    --timer-color: #FFFFFF;
+    --button-bg-color: rgba(66, 211, 255, 0.13);
+
+    font-size: 62.5%;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+}
+
+main {
+    align-self: flex-end;
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer {
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+    line-height: 10.3rem;
+
+    margin-bottom: 1.6rem;
+}
+
+#timer .container {
+    display: flex;
+}
+
+#controls {
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
+    height: clamp(8rem, 5rem + 10vw, 10.8rem);
+
+    display: flex;
+    justify-content: space-around;
+
+    background-color: var(--button-bg-color);
+
+    border-radius: 9999px;
+}
+
+#timer span {
+    height: clamp(10rem, 10rem + 3vw, 10.3rem);
+    color: var(--timer-color);
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+button svg {
+    width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+    height: 5.1rem;
+}
+
+footer {
+    padding: 0 4rem 3.2rem 0 ;
+    
+    align-self: flex-end;
+    justify-self: flex-end;
+}
